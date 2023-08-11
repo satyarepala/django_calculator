@@ -12,33 +12,33 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-image: url("{% load static %}{% static 'images/login_image.jpg' %}");
+            background-size: cover;
+            background-position: center;
         }
         .container {
-            width: 400px;
+            width: 300px; /* Adjust the width for proper alignment */
+            margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
         }
         form {
             display: flex;
             flex-direction: column;
         }
         label {
-            margin-bottom: 8px;
+            margin-bottom: 5px; /* Adjust the margin for spacing */
             color: #555;
         }
         input[type="text"],
         input[type="password"] {
             padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
+            margin-bottom: 5px; /* Adjust the margin for spacing */
+            border: 2px solid #ccc;
+            border-radius: 10px;
         }
         button {
             background-color: #007bff;
@@ -48,24 +48,7 @@
             border-radius: 3px;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #0056b3;
-        }
-        button:active {
-            background-color: #003080;
-        }
-        p {
-            margin-top: 10px;
-            text-align: center;
-            color: #555;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        /* ... (other styles) ... */
     </style>
 </head>
 <body>

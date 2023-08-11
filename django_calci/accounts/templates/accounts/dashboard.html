@@ -60,6 +60,10 @@
             {% csrf_token %}
             <button type="submit">Advanced Calculator</button>
         </form>
+        <form method="post" action="{% url 'submit_feedback' %}">
+            {% csrf_token %}
+            <button type="submit">Submit Feedback</button>
+        </form>
         <p><a href="{% url 'signout' %}">Sign Out</a></p>
     </div>
 </body>

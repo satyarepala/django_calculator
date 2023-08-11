@@ -1,4 +1,5 @@
 from django import forms
+from .models import Feedback
 
 class BasicCalculatorForm(forms.Form):
     num1 = forms.FloatField(label='Number 1', required=False)
@@ -21,3 +22,11 @@ class AdvancedCalculatorForm(forms.Form):
         ('square_root', 'Square Root'),
         ('exponent', 'Exponent')
     ], label='Operation')
+
+class FeedbackForm(forms.ModelForm):
+    class Meta:
+        model = Feedback
+        fields = ['feedback_text']
+
+
+
